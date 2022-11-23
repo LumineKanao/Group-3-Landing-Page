@@ -219,7 +219,7 @@ html::-webkit-scrollbar-thumb:hover {
     color: #ffffff;
     
   }
-  .card:hover .img-container .imge {
+  .card:hover .img-container{
     transform: scale(1.15);
 
   }
