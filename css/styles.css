@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* GENERAL SETTINGS */
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+html::-webkit-scrollbar {
+  width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #DF6C19;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #000000;
+}
+
+
+:root{
+  transition: all ease-in 3s;
+  --primary-color: #181818;
+  --secondary-color: #DF6C19;
+  --tertiary-color: #fff;
+  --quarternary-color: rgb(0, 0, 0);
+  --quinary-color: rgb(167, 167, 167);
+  --senary-color: #131313;
+
+
+}
+
+.light-mode {
+  transition: all ease-in .3s;
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #DF6C19;
+  --tertiary-color: #181818;
+  --quarternary-color: rgb(240, 238, 238);
+  --quinary-color: rgb(167, 167, 167);
+  --senary-color: #dad9d9;  
+}
+
+
+
+body {
+  background-color: var(--primary-color);
+}
+
+@font-face {
+  font-family: 'Hard Race';
+  src: url(/fonts/Hard\ Race.otf);
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* UTILITIES */
+
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--spacer));
+}
+
+/* NAVIGATION BAR CSS */
+
+
+#navButton {
+  -webkit-appearance: none;
+  cursor: pointer;
+  transform: rotateZ(180deg);
+  position: fixed;
+  margin: 4%;
+  z-index: 1121;
+  font-size: 2rem;
+  right: 0%;
+  color: var(--tertiary-color);
+  transition: all .3s;
+}
+
+
+#navButton:checked{
+  transform: rotate(90deg);
+
+}
+
+#navButton:checked::before{
+  content: '\f00d';
+  color:var(--tertiary-color);
+}
+
+#navButton:checked ~ .navBar{
+  top:0;
+}
+
+li {
+    padding: 5% 0;
+    text-align: center;
+    list-style: none;
+}
+
+.navBar {
+    transition: all .5s ease-in-out;
+    position: fixed;
+    top: -110%; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1120;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--quarternary-color);
+
+}
+
+.navBar a {
+    position: relative;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--tertiary-color);
+}
+
+.toggle-switch {
+  margin: 2% 7% 0 0;
+  float: right;
+
+}
+
+/* SECTION NO. 1 */
+
+section {
+    position: relative;
+    padding: 100px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.logo {
+    height: 100px;
+  
+}
+
+#carousel {
+  z-index: 1;
+}
+
+/* MAIN BANNER */
+
+.main-banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-banner__content {
+    position: relative;
+    text-align: center;
+    max-width: 70em;
+    z-index: 1;
+    color: white;
+}
+
+.main-banner h1 {
+    font-family: 'Hard Race';
+    text-transform: uppercase;
+    font-size: 4em;
+    text-shadow: 2px 6px rgb(22, 22, 22);
+}
+
+.main-banner span {
+  color: #DF6C19;
+  font-family: 'Hard Race';
+}
+
+.main-banner p {
+    font-size: 1.2rem;
+}
+
+.main-btn {
+    position: relative;
+    display: inline-block;
+    margin: 3% 2%;
+    text-transform: uppercase;
+    padding: 0.9rem 2.6rem;
+    font-size: 0.6rem;
+    letter-spacing: 2.5px;
+    border-radius: 4.1rem;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-weight: 900;
+}
+
+.main-btn--explore {
+    color: white;
+    background-color: #DF6C19;
+    border: #DF6C19 1px solid;
+  }
+  
+.main-btn--join {
+    color: white;
+    background-color: transparent;
+    border: 1px solid;
+  }
+
+
+.section-about
+{
+  
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.section-about .btn-dive {
+  margin-right: 10%;
+}
+
+.about  {
+    max-width: 50%;
+    text-align: end;
+}
+
+.section-about .title, .section-about .text {
+    width: 90%;
+}
+
+.text {
+  color: var(--tertiary-color);
+  font-family: 'Lora', serif;
+}
+
+.title {
+    color: var(--tertiary-color);
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+
+.section-about .text {
+    font-size: 1rem;   
+    margin: 8% 0;
+}
+
+.title span {
+    color: var(--secondary-color);
+}
+
+.section-img {
+    position: relative; 
+    min-width: 50%;
+    width: 50%;
+    min-height: 30rem;
+}
+
+
+.middle-banner {
+  position: relative;
+  max-width: 100%;
+  min-height: 100vh;
+
+}
+
+.middle-bg {
+  position: absolute;
+  left: 0; top:0;
+  height: 85vh;
+  width: 100%;
+}
+
+.featured {
+  margin-top: -5%;
+}
+
+
+.featured-img {
+  position: relative; 
+  min-width: 100%;
+  width: 50%;
+  min-height: 30rem;
+}
+
+.featured, .featured-content {
+  text-align: center;
+}
+
+.featured-places {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feat{
+  padding: 1em;
+}
+
+.featured h2 {
+  color: var(--tertiary-color);
+}
+
+.featured-places p {
+  color: var(--tertiary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Lora', serif;
+}
+
+.featured__section {
+  margin-top: -7rem;
+}
+
+.featured .text {
+  font-family: 'Poppins', sans-serif;
+  margin-top: -4%;
+  margin-bottom: 3%;
+  font-size: 1rem;
+}
+
+.end-banner {
+  min-height: 100vh;
+}
+
+.team {
+  margin-top: -7%;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em 1em;
+  text-align: center;
+}
+.column {
+  width: 100%;
+  padding: 0.5em 0;
+}
+.row h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5em;
+  color: var(--secondary-color);
+}
+.card {
+  box-shadow: 0 0 .4em var(--quarternary-color);
+  padding: 3.5em 1em;
+  border-radius: 0.6em;
+  color: var(--secondary-color);
+  transition: 0.3s;
+  background-color: var(--senary-color);
+}
+.card .img-container {
+  width: 12em;
+  height: 12em;
+  padding: 0.5em;
+  border-radius: 50%;
+  margin: 0 auto 2em auto;
+}
+.card img {
+  width: 100%;
+  border-radius: 50%;
+}
+.card h3 {
+  font-weight: 500;
+}
+.card p {
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0.5em 0 2em 0;
+  letter-spacing: 2px;
+}
+.icons {
+  width: 50%;
+  min-width: 200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 2rem;
+}
+
+.team__second {
+  margin-top: -12rem;
+}
+
+
+/* FOOTER */
+
+.footer{
+  background:var(--senary-color);
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+  }
+
+    
+.footer-row{
+  width:100%;
+  color:var(--tertiary-color);
+  font-size:1em;
+  opacity: 0.8;
+  }
+  
+
+.footer-icons, .footer-row {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+}
+
+.footer-icons li{ 
+  margin: 0 1rem;
+}
+
+.team h1 {
+  color: var(--tertiary-color);
+}
+
+.team span {
+  color: var(--secondary-color);
+}
+
+.list-icons a {
+  position: relative; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: var(--senary-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--tertiary-color);
+  transition: .5s;
+}
+
+.footer-row li a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
+
+.footer-row ul li{
+  display:inline-block;
+  margin: 1rem;
+  }
+
+.footer-row p {
+  font-size: .6rem;
+}
+
+
+.touch {
+  margin: 1%;
+  color: var(--tertiary-color);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.touch span {
+  color: var(--secondary-color);
+}
+
+.input {
+    font-weight: 500px;
+    font-size: 1vw;
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 .4vw rgba(239, 94, 10, 0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    max-width: 190px;
+    transition: .4s;
+  }
+  
+.footer-bottom {
+  margin-top: -2%;
+}
+
+.email a {
+  color: var(--secondary-color);
+}
+

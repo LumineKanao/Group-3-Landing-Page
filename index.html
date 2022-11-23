@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/toggle.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css  "> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <title>GROUP 3</title>
+
+    <script> 
+    $(function(){
+      $("#carousel").load("html/carousel.html"); 
+    });
+</script>
+</head>
+<body>
+        <div>
+            <input type="checkbox" name="" id="navButton" class="fas fa-stream">
+            <nav class="navBar">
+                <ul>
+                    <li><a  href="#">Home</a></li>
+                    <li><a  href="#">About</a></li>
+                    <li><a  href="#">Explore</a></li>
+                    <li><a  href="#">Guide</a></li>
+                    <li><a  href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>  
+    <section class="header">
+        <img class="logo" src="images/logo.png"> 
+    </section>
+
+    <section class="main-banner">
+      <div id="carousel" class="main-bg"></div>
+            <div class="main-banner__content">
+                <h1><span>Dare</span> to Reveal</h1>
+                <p>Escape the matrix and travel <br>
+                    the unkown places around the world.</p>
+                <button class="main-btn main-btn--explore">Explore</button>
+                <button class="main-btn main-btn--join">Join Us</button> 
+            </div>   
+    </section> 
+    
+    <div class="toggle-switch">
+      <label class="switch">
+        <input id="toggle" type="checkbox">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <section class="section-about">
+        <div class="about">
+            <h2 class="title"><span>Welcome, </span>Traveler.</h2>
+            <p class="text">The world, even the smallest parts of it, is filled with things you don’t know.</p>
+            <p class="text">Exceptional places on earth have many unknown mysteries and sphinx hidden behind which are 
+                puzzle in itself and exist as a mystery.</p>
+            <p class="text">Welcome to <span style="font-family: 'Lora', serif; font-weight: 900; color: #DF6C19;">Enigma</span> where you can find the most mysterious places around the world.</p>
+            <div class="dive">
+            <button class="btn-dive" href="#">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Dive Deeper</span>
+            </button>
+          </div>
+        </div>
+        <div class="section-img">
+            <img src="images/about-pic.png" id="section-img" class="main-bg">
+        </div>
+    </section>
+
+    <section class="middle-banner">
+        <img src="images/middle-banner.png" class="middle-bg">      
+    </section>
+
+    <section class="featured">
+        <div class="featured-content">
+            <h2 class="title">Unknown <span>Destinations</span></h2>
+            <p class="text"> It is time to get out of your comfort 
+                zone and explore the unknown places 
+                around the world. <br> Once you get in,
+                 there is no turning back.
+        </div>
+        <div class="featured-places">
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-1.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>Mount Buzludzha <br><p>The former home of the Bulgarian Communist Party is now an abandoned saucer-like structure atop a mountain.
+                        </p></h2>
+                    </div>
+                </div>
+            
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-2.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>Cenotes in Mexico<br>
+                            <p>Natural sinkholes that were literally used for sacrifices by the ancient Mayans.</p></h2>
+                    </div>
+                </div>
+    
+            
+
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-3.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>The Initiation Wells<br>
+                            <p>Located in the Quinta da Regaleira palace. These wells were once used for 
+                                ceremonies, including Tarot rites.</p></h2>
+                     </div>
+                </div>
+
+                
+        </div>
+    </section>
+
+    <section class="featured featured__section">
+        <div class="featured-places">
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-4.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>Kolmanskop<br><p>A former
+                            diamond mining town in the Namib Desert 
+                            where geological forces have buried 
+                            many houses in sand.</p></h2>
+                    </div>
+                </div>
+            
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-5.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>Catacombs of Paris<br><p>The remains of over 
+                            six million people are found in Paris' 
+                            dark, labyrinthine underground tunnels.
+                        </p></h2>
+                    </div>
+                </div>
+
+
+            <div class="featured-card">
+                <div class="featured-img">
+                    <img src="images/featured-6.png" class="feat">
+                </div>
+                    <div class="featured-details">
+                        <h2>Door to hell<br><p>The "door" is a huge,
+                             gas-filled crater that's been burning 
+                             nonstop since it was lit by Soviet scientists in 1971.
+                        </p></h2>
+                     </div>
+                </div> 
+        </div>
+        <button class="sub-btn main-btn--explore" style="margin-top: 5%">See more</button>
+    </section>
+    
+    
+    <section class="end-banner">
+        <img src="images/end-banner.png" class="middle-bg">      
+    </section>
+   
+
+    <section class="team">
+    <div class="row">
+      <h1>Our <span>Team</span></h1>
+    </div>
+    <div class="row">
+
+
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/shawn.png" />
+          </div>
+          <h3>Shawn Aquino</h3>
+          <p>Lead UI Designer</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/tim.png" />
+          </div>
+          <h3>Timothy John Timtiman</h3>
+          <p>Lead Developer</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/darea.png" />
+          </div>
+          <h3>Darea Anne Jawili</h3>
+          <p>Designer</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="team team__second">
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/ema.png" />
+          </div>
+          <h3>Ema Dhea Madrigal</h3>
+          <p>Researcher</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+
+
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/jen.png" />
+          </div>
+          <h3>Jennelyn Mansalapus</h3>
+          <p>Researcher</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="column">
+        <div class="card">
+          <div class="img-container">
+            <img src="images/mafe.png" />
+          </div>
+          <h3>Ma.fe Postrado</h3>
+          <p>Developer</p>
+          <div class="icons">
+            <a href="#">
+                <i id="facebook" class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i id="twitter" class="fab fa-twitter"></i>
+              </a>
+            <a href="#">
+              <i id="instagram" class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i id="gmail" class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+<footer>
+  <div class="footer">
+    <ul class="footer-icons">
+      <li class="list-icons">
+        <a id="footer-facebook" href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+      <li class="list-icons">
+        <a id="footer-twitter" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+      <li class="list-icons">
+        <a id="footer-art" href="#">
+          <i class="fab fa-discord"></i>
+        </a>        
+      </li>
+      <li class="list-icons">
+        <a id="footer-yt" href="#">
+          <i class="fab fa-youtube"></i>
+        </a> 
+      </li>
+    </ul>
+  <div class="footer-bottom">
+    <div class="email">
+      <p class="touch">Stay in <span>Touch</span></p>
+      <input type="text" name="text" class="input" placeholder="Email Address"> <a href="#" class="fa-solid fa-caret-right"></a>
+    </div>
+    <div class="footer-row">
+    <ul>
+      <li><a href="#">Contact us</a></li>
+      <li><a href="#">Our Services</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms & Conditions</a></li>
+      <li><a href="#">Career</a></li>
+    </ul>
+    </div>
+    
+    <div class="footer-row">
+    <p>ENIGMA Copyright © 2022 Enigma - All rights reserved</p>
+    </div>
+    </div>
+  </div>
+</div>
+  </footer>
+  <script>
+
+    var toggle = document.getElementById("toggle");
+
+    toggle.onclick = function(){
+      document.body.classList.toggle("light-mode");
+    }
+</script>
+  
+</html>
